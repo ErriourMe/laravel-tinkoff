@@ -19,7 +19,7 @@ composer require erriourru/laravel-tinkoff
 Подключение в контроллере:
 
 ```php
-use Kenvel\Tinkoff;
+use ErriourRU\Tinkoff;
 ```
 
 ## Примеры использования
