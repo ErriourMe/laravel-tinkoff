@@ -14,6 +14,12 @@
             "email": "dimult@yahoo.com",
             "homepage": "https://github.com/kenvel/",
             "role": "Developer"
+        },
+        {
+            "name": "Vladimir Gonchar", 
+            "email": "erriour.me@gmail.com",
+            "homepage": "https://github.com/ErriourRU/",
+            "role": "Developer"
         }
     ],    
     "require": {
