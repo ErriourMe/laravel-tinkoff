@@ -11,7 +11,7 @@
  * @author Dmitry Kenvel <dimult@yahoo.com>
  */
 
-namespace Kenvel;
+namespace ErriourRU;
 
 class Tinkoff {
     private $acquiring_url;
