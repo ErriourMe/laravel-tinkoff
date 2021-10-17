@@ -1,5 +1,5 @@
 {
-    "name": "ErriourRU/laravel-tinkoff",
+    "name": "erriourru/laravel-tinkoff",
     "type": "library",
     "description": "Simple Tinkoff bank acquiring library.",
     "keywords": [
