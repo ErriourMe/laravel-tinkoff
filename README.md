@@ -13,7 +13,7 @@
 С помощью [Composer](https://getcomposer.org/):
 
 ```bash
-composer require ErriourRU/laravel-tinkoff
+composer require erriourru/laravel-tinkoff
 ```
 
 Подключение в контроллере:
