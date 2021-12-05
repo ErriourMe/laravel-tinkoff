@@ -26,6 +26,6 @@
         "php": "^7.1|^8.0"
     },
     "autoload": {
-        "psr-4": { "Kenvel\\": "src" }
+        "psr-4": { "ErriourRU\\": "src" }
     }
 }
