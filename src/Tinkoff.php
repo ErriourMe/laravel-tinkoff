@@ -78,23 +78,25 @@ class Tinkoff {
             }
 
             $payment['Items'][] = [
-                'Name'      => mb_strimwidth($item['Name'], 0, $item_name_max_lenght - 1, ''),
-                'Price'     => $item['Price'] * $amount_multiplicator,
-                'Quantity'  => $item['Quantity'],
-                'Amount'    => $item['Price'] * $item['Quantity'] * $amount_multiplicator,
-                'Tax'       => $item['NDS'],
+                'Name' => mb_strimwidth($item['Name'], 0, $item_name_max_lenght - 1, ''),
+                'Price' => $item['Price'] * $amount_multiplicator,
+                'Quantity' => $item['Quantity'],
+                'Amount' => $item['Price'] * $item['Quantity'] * $amount_multiplicator,
+                'Tax' => $item['NDS'],
+                'PaymentMethod' => $item['PaymentMethod'] ?? 'full_payment',
+                'PaymentObject' => $item['PaymentObject'] ?? 'commodity',
             ];
         }
 
-        $params = array(
-            'OrderId'       => $payment['OrderId'],
-            'Amount'        => $payment['Amount'] * $amount_multiplicator,
-            'Language'      => $payment['Language'],
-            'Description'   => $payment['Description'],
+        $params = [
+            'OrderId' => $payment['OrderId'],
+            'Amount' => $payment['Amount'] * $amount_multiplicator,
+            'Language' => $payment['Language'],
+            'Description' => $payment['Description'],
             'DATA' => [
-                'Email'     => $payment['Email'],
-                'Phone'     => $payment['Phone'],
-                'Name'      => $payment['Name'],
+                'Email' => $payment['Email'],
+                'Phone' => $payment['Phone'],
+                'Name' => $payment['Name'],
             ],
             'Receipt' => [
                 'Email'     => $payment['Email'],
@@ -102,7 +104,9 @@ class Tinkoff {
                 'Taxation'  => $payment['Taxation'],
                 'Items'     => $payment['Items'],
             ],            
-        );
+        ] +
+            ($item['FailURL'] ? ['FailURL' => $item['FailURL']] : []) +
+            ($item['SuccessURL'] ? ['SuccessURL' => $item['SuccessURL']] : []);
 
         if( $this->sendRequest($this->url_init, $params) ){
             return $this->payment_url;
