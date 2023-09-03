@@ -105,8 +105,8 @@ class Tinkoff {
                 'Items'     => $payment['Items'],
             ],            
         ] +
-            ($item['FailURL'] ? ['FailURL' => $item['FailURL']] : []) +
-            ($item['SuccessURL'] ? ['SuccessURL' => $item['SuccessURL']] : []);
+            (isset($item['FailURL']) ? ['FailURL' => $item['FailURL']] : []) +
+            (isset($item['SuccessURL']) ? ['SuccessURL' => $item['SuccessURL']] : []);
 
         if( $this->sendRequest($this->url_init, $params) ){
             return $this->payment_url;
