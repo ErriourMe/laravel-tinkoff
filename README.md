@@ -1,11 +1,11 @@
-# Simple Tinkoff bank acquiring library.
+# Tinkoff bank library
 Простая библиотека для приема платежей через интернет для Тинькофф банк.
 
 ### Возможности
 
  * Генерация URL для оплаты товаров
- * Подттверждение платежа
- * Просмотр статуса платжа
+ * Подтверждение платежа
+ * Просмотр статуса платежа
  * Отмена платежа
 
 ### Установка
@@ -103,9 +103,3 @@ if(!$status){
   echo($status);
 }
 ```
-
----
-
-[![Donate button](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FGCHZNKKVG622&source=url)
-
-*Если вы нашли этот проект полезным, Вы можете отблагодарить автора оригинального пакета рублем*

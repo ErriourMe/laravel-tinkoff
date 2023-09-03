@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="912c3567-5019-4b9b-850a-a42c9ec80f6d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Tinkoff.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tinkoff.php" afterDir="false" />
+    <list default="true" id="912c3567-5019-4b9b-850a-a42c9ec80f6d" name="Changes" comment="fix: undefined array key &quot;FailURL&quot; fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,10 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "/home/vladimir/code/web/owner/0_packages/laravel-tinkoff",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -48,11 +56,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1693740358332</updated>
-      <workItem from="1693740359424" duration="215000" />
+      <workItem from="1693740359424" duration="354000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: undefined array key &quot;FailURL&quot; fix">
+      <option name="closed" value="true" />
+      <created>1693740649941</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693740649941</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: undefined array key &quot;FailURL&quot; fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: undefined array key &quot;FailURL&quot; fix" />
   </component>
 </project>
